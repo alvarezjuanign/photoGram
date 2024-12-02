@@ -1,0 +1,81 @@
+<script>
+  const historias = document.querySelectorAll('li')
+
+  const historiaVista = (e: Event) => {
+    e.preventDefault()
+    const historia = e.target as HTMLLIElement
+    historia.classList.remove('border-red-400')
+  }
+
+  for (const historia of historias) {
+    historia.addEventListener('click', historiaVista)
+  }
+</script>
+
+<section class='px-2 relative overflow-x-scroll h-24 m-1'>
+  <ul class='flex gap-20 relative'>
+    <li>
+      <img
+        src='https://i.pravatar.cc/150?img=3'
+        alt='imagen de usuario'
+        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
+      />
+    </li>
+    <li>
+      <img
+        src='https://i.pravatar.cc/150?img=4'
+        alt='imagen de usuario'
+        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
+      />
+    </li>
+    <li>
+      <img
+        src='https://i.pravatar.cc/150?img=6'
+        alt='imagen de usuario'
+        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
+      />
+    </li>
+    <li>
+      <img
+        src='https://i.pravatar.cc/150?img=1'
+        alt='imagen de usuario'
+        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
+      />
+    </li>
+    <li>
+      <img
+        src='https://i.pravatar.cc/150?img=2'
+        alt='imagen de usuario'
+        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
+      />
+    </li>
+    <li>
+      <img
+        src='https://i.pravatar.cc/150?img=7'
+        alt='imagen de usuario'
+        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
+      />
+    </li>
+    <li>
+      <img
+        src='https://i.pravatar.cc/150?img=10'
+        alt='imagen de usuario'
+        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
+      />
+    </li>
+    <li>
+      <img
+        src='https://i.pravatar.cc/150?img=8'
+        alt='imagen de usuario'
+        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
+      />
+    </li>
+    <li>
+      <img
+        src='https://i.pravatar.cc/150?img=9'
+        alt='imagen de usuario'
+        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
+      />
+    </li>
+  </ul>
+</section>
