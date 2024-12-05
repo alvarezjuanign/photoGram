@@ -1,81 +1,86 @@
+---
+import usuarios from '../mockups/historias.json'
+import plus from '../assets/plus.svg'
+---
+
 <script>
-  const historias = document.querySelectorAll('li')
+  const historias = document.querySelectorAll('#historia')
+  const modal = document.querySelector('dialog') as HTMLDialogElement
+  const imagen = document.querySelector('.imagenH') as HTMLImageElement
 
   const historiaVista = (e: Event) => {
     e.preventDefault()
     const historia = e.target as HTMLLIElement
-    historia.classList.remove('border-red-400')
+    const aleatorio = Math.floor(Math.random() * 100) + 1
+    const src = `https://picsum.photos/id/${aleatorio}/1920/1080`
+
+    if (historia.classList.contains('border-red-500')) {
+      historia.classList.remove('border-red-500')
+    }
+
+    if (historia.classList.contains('border-green-500')) {
+      historia.classList.remove('border-green-500')
+    }
+
+    imagen.setAttribute('src', src)
+
+    imagen.onload = () => {
+      modal.showModal()
+      setTimeout(() => {
+        modal.close()
+        imagen.setAttribute('src', '')
+      }, 3000)
+    }
   }
 
-  for (const historia of historias) {
+  historias.forEach((historia) => {
     historia.addEventListener('click', historiaVista)
-  }
+  })
 </script>
 
 <section class='px-2 relative overflow-x-scroll h-24 m-1'>
   <ul class='flex gap-20 relative'>
     <li>
       <img
-        src='https://i.pravatar.cc/150?img=3'
+        src='https://i.pravatar.cc/150?img=11'
         alt='imagen de usuario'
-        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
+        class='rounded-full absolute h-16 border-4 cursor-pointer'
       />
+      <div
+        class='w-6 h-6 flex justify-center items-center rounded-full bg-blue-500 relative top-10 left-10'
+      >
+        <img src={plus.src} alt='' class='w-4' />
+      </div>
     </li>
-    <li>
-      <img
-        src='https://i.pravatar.cc/150?img=4'
-        alt='imagen de usuario'
-        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
-      />
-    </li>
-    <li>
-      <img
-        src='https://i.pravatar.cc/150?img=6'
-        alt='imagen de usuario'
-        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
-      />
-    </li>
-    <li>
-      <img
-        src='https://i.pravatar.cc/150?img=1'
-        alt='imagen de usuario'
-        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
-      />
-    </li>
-    <li>
-      <img
-        src='https://i.pravatar.cc/150?img=2'
-        alt='imagen de usuario'
-        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
-      />
-    </li>
-    <li>
-      <img
-        src='https://i.pravatar.cc/150?img=7'
-        alt='imagen de usuario'
-        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
-      />
-    </li>
-    <li>
-      <img
-        src='https://i.pravatar.cc/150?img=10'
-        alt='imagen de usuario'
-        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
-      />
-    </li>
-    <li>
-      <img
-        src='https://i.pravatar.cc/150?img=8'
-        alt='imagen de usuario'
-        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
-      />
-    </li>
-    <li>
-      <img
-        src='https://i.pravatar.cc/150?img=9'
-        alt='imagen de usuario'
-        class='rounded-full absolute h-16 border-4 border-red-400 cursor-pointer'
-      />
-    </li>
+    {
+      usuarios.map((usuario) => {
+        return (
+          <li id='historia'>
+            {usuario.mejores ? (
+              <img
+                src={usuario.imagen}
+                alt='imagen de usuario'
+                class='rounded-full absolute h-16 border-4 border-green-500 cursor-pointer'
+              />
+            ) : (
+              <img
+                src={usuario.imagen}
+                alt='imagen de usuario'
+                class='rounded-full absolute h-16 border-4 border-red-500 cursor-pointer'
+              />
+            )}
+          </li>
+        )
+      })
+    }
   </ul>
 </section>
+<dialog class='modal w-screen h-screen outline-none box-border'>
+  <div class='modal-box h-full w-full'>
+    <img
+      src=''
+      class='imagenH h-full object-cover aspect-[16/9]'
+      alt='imagen aleatoria'
+    />
+  </div>
+</dialog>
