@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "nombre": "Alejandro Jose Diallo",
+    "imagenU": "https://i.pravatar.cc/150?img=1",
+    "imagen": "https://picsum.photos/id/20/1920/1080"
+  },
+  {
+    "id": 2,
+    "nombre": "Iria Benitez",
+    "imagen": "https://picsum.photos/id/22/1920/1080"
+  },
+  {
+    "id": 3,
+    "nombre": "Hassan Lucas",
+    "imagen": "https://picsum.photos/id/12/1920/1080"
+  },
+  {
+    "id": 4,
+    "nombre": "Estibaliz Izquierdo",
+    "imagen": "https://picsum.photos/id/30/1920/1080"
+  },
+  {
+    "id": 5,
+    "nombre": "Ibon Moliner",
+    "imagen": "https://picsum.photos/id/25/1920/1080"
+  }
+]
