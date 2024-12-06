@@ -1,11 +1,13 @@
 import message from './assets/message.svg'
 import heart from './assets/heart.svg'
 
+import { Historias } from './components/Historias'
 import { Navbar } from './components/Navbar'
+import { Posts } from './components/Posts'
 
 export function App() {
   return (
-    <>
+    <main className='flex flex-col h-screen'>
       <nav className='flex justify-between'>
         <h1 className='text-2xl m-1'>PhotoGram</h1>
         <div className='flex mx-3 gap-2'>
@@ -17,10 +19,11 @@ export function App() {
           </a>
         </div>
       </nav>
-      <main>
-        <h2 className='text-2xl m-1'>Fotos</h2>
+      <section>
+        <Historias />
+        <Posts />
         <Navbar />
-      </main>
-    </>
+      </section>
+    </main>
   )
 }
