@@ -7,12 +7,11 @@ export function Posts() {
   return (
     <section>
       <ul>
-
         <li className='mb-5'>
           <header className='flex items-center ml-2 mb-2'>
             <img
               src='https://i.pravatar.cc/150?img=11'
-              alt='avatar de usuario'
+              alt='Avatar de usuario'
               className='h-10 w-10 rounded-full'
             />
             <div className='ml-2'>
@@ -21,29 +20,29 @@ export function Posts() {
             </div>
           </header>
           <img
-            src='https://picsum.photos/500/500'
-            alt='imagen de post'
+            src='https://picsum.photos/id/128/1920/1080'
+            alt='Post del usuario'
             className='w-full object-cover aspect-square'
           />
           <section className='bg-white h-6 flex justify-between mt-2 mx-1'>
             <div>
               <ul className='flex'>
                 <li className='flex mx-1'>
-                  <img src={heart} alt='' className='h-5' />
+                  <img src={heart} alt='Icono me gusta' className='h-5' />
                   <p className='text-sm'></p>
                 </li>
                 <li className='flex mx-1'>
-                  <img src={message} alt='' className='h-5 mr-1' />
+                  <img src={message} alt='Icono comentario' className='h-5 mr-1' />
                   <p className='text-sm'></p>
                 </li>
                 <li className='flex mx-1'>
-                  <img src={send} alt='' className='h-5 mr-1' />
+                  <img src={send} alt='Icono enviar' className='h-5 mr-1' />
                   <p className='text-sm'></p>
                 </li>
               </ul>
             </div>
             <div>
-              <img src={fav} alt='' className='h-5 mr-1' />
+              <img src={fav} alt='Icono favorito' className='h-5 mr-1' />
             </div>
           </section>
           <article>
@@ -56,6 +55,5 @@ export function Posts() {
         </li>
       </ul>
     </section >
-
   )
 }
