@@ -10,10 +10,10 @@ export function App() {
         <h1 className='text-2xl m-1'>PhotoGram</h1>
         <div className='flex mx-3 gap-2'>
           <a href='/notificaciones' className='mt-1'>
-            <img src={heart} alt='' className='w-6 cursor-pointer' />
+            <img src={heart} alt='Icono de notificaciones' className='w-6 cursor-pointer' />
           </a>
           <a href='/mensajes' className='mt-1'>
-            <img src={message} alt='' className='w-6 cursor-pointer' />
+            <img src={message} alt='Icono de mensajes' className='w-6 cursor-pointer' />
           </a>
         </div>
       </nav>
