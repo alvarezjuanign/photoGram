@@ -5,7 +5,7 @@ import reel from '../assets/reel.svg'
 
 export function Navbar() {
   return (
-    <section className='sticky bottom-0 bg-white'>
+    <section className='fixed bottom-0 w-full bg-white'>
       <nav>
         <ul className='flex justify-around items-center h-10'>
           <li>
