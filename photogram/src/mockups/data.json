@@ -1,0 +1,252 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "wanderlust_jane",
+      "fullName": "Jane Walters",
+      "profilePicture": "https://ui-avatars.com/api/?name=Jane+Walters&background=random",
+      "bio": "Exploring the world one city at a time 🌍✈️",
+      "website": "https://wanderlustjane.com",
+      "followers": 4520,
+      "following": 310,
+      "posts": 112,
+      "stories": [
+        {
+          "id": "101",
+          "media": "https://picsum.photos/id/23/1920/1080",
+          "timestamp": "2024-12-03T10:15:00Z",
+          "isSeen": false
+        }
+      ],
+      "feed": [
+        {
+          "id": "201",
+          "media": "https://picsum.photos/500/300?random=1",
+          "caption": "Venice is magical 🛶✨ #Italy",
+          "likes": 1320,
+          "comments": [],
+          "timestamp": "2024-12-03T12:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "username": "fit_guru",
+      "fullName": "Mark Peters",
+      "profilePicture": "https://ui-avatars.com/api/?name=Mark+Peters&background=random",
+      "bio": "Personal Trainer 💪 | Nutrition Coach 🥗",
+      "website": "https://markfitlife.com",
+      "followers": 8200,
+      "following": 350,
+      "posts": 96,
+      "stories": [],
+      "feed": [
+        {
+          "id": "202",
+          "media": "https://picsum.photos/500/300?random=2",
+          "caption": "No excuses, just results! 🏋️‍♂️ #Fitness",
+          "likes": 2150,
+          "comments": [],
+          "timestamp": "2024-12-02T07:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "username": "techie_sarah",
+      "fullName": "Sarah Clark",
+      "profilePicture": "https://ui-avatars.com/api/?name=Sarah+Clark&background=random",
+      "bio": "Tech enthusiast 🔧 | AI Researcher 🤖",
+      "website": "https://sarahtech.com",
+      "followers": 5200,
+      "following": 200,
+      "posts": 84,
+      "stories": [],
+      "feed": [
+        {
+          "id": "203",
+          "media": "https://picsum.photos/500/300?random=3",
+          "caption": "Working on something exciting in the AI space! 🤓",
+          "likes": 870,
+          "comments": [],
+          "timestamp": "2024-12-01T18:20:00Z"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "username": "foodie_james",
+      "fullName": "James Lee",
+      "profilePicture": "https://ui-avatars.com/api/?name=James+Lee&background=random",
+      "bio": "Chasing flavors 🍔🍣 | Home cook 👨‍🍳",
+      "website": "",
+      "followers": 13200,
+      "following": 530,
+      "posts": 160,
+      "stories": [
+        {
+          "id": "104",
+          "media": "https://ui-avatars.com/api/?name=James+Story&background=random",
+          "timestamp": "2024-12-03T17:00:00Z",
+          "isSeen": false
+        }
+      ],
+      "feed": [
+        {
+          "id": "204",
+          "media": "https://picsum.photos/500/300?random=4",
+          "caption": "Homemade sushi night 🍣❤️ #FoodieLife",
+          "likes": 3320,
+          "comments": [],
+          "timestamp": "2024-12-03T16:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "username": "travel_guru",
+      "fullName": "Linda Carter",
+      "profilePicture": "https://ui-avatars.com/api/?name=Linda+Carter&background=random",
+      "bio": "Globe-trotter 🌍 | Sharing my travel tips 🧳",
+      "website": "https://travelguru.com",
+      "followers": 18000,
+      "following": 400,
+      "posts": 250,
+      "stories": [
+        {
+          "id": "105",
+          "media": "https://ui-avatars.com/api/?name=Linda+Story&background=random",
+          "timestamp": "2024-12-04T08:15:00Z",
+          "isSeen": false
+        }
+      ],
+      "feed": [
+        {
+          "id": "205",
+          "media": "https://picsum.photos/500/300?random=5",
+          "caption": "Sunset in Santorini 🏖️🌅 #Greece",
+          "likes": 4050,
+          "comments": [],
+          "timestamp": "2024-12-04T08:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "username": "artsy_annie",
+      "fullName": "Annie Lopez",
+      "profilePicture": "https://ui-avatars.com/api/?name=Annie+Lopez&background=random",
+      "bio": "Painter 🎨 | Digital Artist 🖌️ | Dreaming in colors 🌈",
+      "website": "https://artsyannie.com",
+      "followers": 6700,
+      "following": 450,
+      "posts": 130,
+      "stories": [],
+      "feed": [
+        {
+          "id": "206",
+          "media": "https://picsum.photos/500/300?random=6",
+          "caption": "Acrylic on canvas, inspired by nature 🌳",
+          "likes": 1250,
+          "comments": [],
+          "timestamp": "2024-12-02T13:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "username": "gamer_mike",
+      "fullName": "Michael Ray",
+      "profilePicture": "https://ui-avatars.com/api/?name=Michael+Ray&background=random",
+      "bio": "Streamer 🎮 | FPS Pro | Building a gaming community",
+      "website": "https://gamermike.com",
+      "followers": 3200,
+      "following": 150,
+      "posts": 40,
+      "stories": [
+        {
+          "id": "106",
+          "media": "https://picsum.photos/id/237/1920/1080",
+          "timestamp": "2024-12-03T14:00:00Z",
+          "isSeen": false
+        }
+      ],
+      "feed": [
+        {
+          "id": "207",
+          "media": "https://picsum.photos/500/300?random=7",
+          "caption": "GGs last night! 🎮 #Gaming",
+          "likes": 850,
+          "comments": [],
+          "timestamp": "2024-12-03T11:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "username": "yoga_yara",
+      "fullName": "Yara Collins",
+      "profilePicture": "https://ui-avatars.com/api/?name=Yara+Collins&background=random",
+      "bio": "Yoga Teacher 🧘‍♀️ | Wellness Coach 🌿 | Stay balanced",
+      "website": "https://yogayara.com",
+      "followers": 5500,
+      "following": 200,
+      "posts": 120,
+      "stories": [],
+      "feed": [
+        {
+          "id": "208",
+          "media": "https://picsum.photos/500/300?random=8",
+          "caption": "Morning flow 🌞 #YogaEveryday",
+          "likes": 1300,
+          "comments": [],
+          "timestamp": "2024-12-02T06:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "username": "nature_lover",
+      "fullName": "Ethan Brooks",
+      "profilePicture": "https://ui-avatars.com/api/?name=Ethan+Brooks&background=random",
+      "bio": "Hiker 🥾 | Nature Photographer 📷 | Sharing my adventures",
+      "website": "https://naturelover.com",
+      "followers": 8000,
+      "following": 300,
+      "posts": 220,
+      "stories": [],
+      "feed": [
+        {
+          "id": "209",
+          "media": "https://picsum.photos/500/300?random=9",
+          "caption": "The mountains are calling 🏔️",
+          "likes": 1700,
+          "comments": [],
+          "timestamp": "2024-12-01T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "username": "bookworm_emily",
+      "fullName": "Emily Davis",
+      "profilePicture": "https://ui-avatars.com/api/?name=Emily+Davis&background=random",
+      "bio": "Book Reviewer 📚 | Writing my own story ✍️ | #FictionLover",
+      "website": "",
+      "followers": 4300,
+      "following": 120,
+      "posts": 75,
+      "stories": [],
+      "feed": [
+        {
+          "id": "210",
+          "media": "https://picsum.photos/500/300?random=10",
+          "caption": "A cup of tea and a good book ☕📖",
+          "likes": 950,
+          "comments": [],
+          "timestamp": "2024-12-02T20:00:00Z"
+        }
+      ]
+    }
+  ]
+}
