@@ -5,20 +5,20 @@ import { useState } from 'react'
 export function Historias() {
   const [showModal, setShowModal] = useState(false)
   const [src, setSrc] = useState('')
+  const [id, setId] = useState(0)
 
   const historiaVista = (e) => {
     e.preventDefault()
     const historia = e.target
     const usuario = historia.id
-    console.log(e.target)
-    console.log(usuario)
 
     if (historia.classList.contains('border-red-500')) {
       historia.classList.remove('border-red-500')
     }
 
-    setShowModal(true)
     setSrc(data.users[usuario - 1].stories[0].media)
+    setId(data.users[usuario - 1].id - 1)
+    setShowModal(true)
 
     setTimeout(() => {
       setShowModal(false)
@@ -28,7 +28,7 @@ export function Historias() {
 
   return (
     <>
-      <section className='px-2 relative overflow-x-scroll h-24 m-1'>
+      <section className='px-2 overflow-x-scroll h-24 m-1'>
         <ul className='flex gap-20 relative'>
           <li>
             <img
@@ -56,11 +56,18 @@ export function Historias() {
             ))
           }
         </ul>
-        <dialog className='w-screen h-screen outline-none box-border' open={showModal}>
+        <dialog className='w-screen absolute z-50 top-0 h-screen outline-none box-border aspect-video' open={showModal}>
           <div className='modal-box h-full w-full'>
+            <div className='flex items-center absolute w-full p-2'>
+              <img
+                src={data.users[id].profilePicture}
+                alt="Foto de perfil de usuario"
+                className='h-9 w-9 rounded-full' />
+              <p className='ml-2 font-bold text-white'>{data.users[id].username}</p>
+            </div>
             <img
               src={src}
-              className='h-full object-cover aspect-[16/9]'
+              className='h-full object-cover'
               alt='imagen usuario'
             />
           </div>
